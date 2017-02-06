@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//20160301 word cloud Lyon start-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://10.11.22.456"
+        android:background="#55000000"
+        android:textColor="#ffffffff"
+        android:id="@+id/url_txt"
+        android:layout_alignBottom="@+id/button_url"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button_url" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="輸入"
+        android:textColor="#ffffffff"
+        android:id="@+id/button_url"
+        android:background="@drawable/buttoncolor"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
